@@ -1,4 +1,4 @@
-package com.contacts;
+package contacts;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
