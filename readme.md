@@ -17,6 +17,14 @@ brew tap pivotal/tap
 brew install springboot
 ```
 
+## Install Maven
+
+To install Maven:
+
+```shell
+brew install maven
+```
+
 ## Run the project
 
 To run the project:
@@ -24,5 +32,7 @@ To run the project:
 ```
 git clone https://github.com/benoitvallon/spring-contacts.git
 cd spring-contacts
-spring run .
+mvn spring-boot:run
 ```
+
+You can then go to [http://localhost:8080](http://localhost:8080)
