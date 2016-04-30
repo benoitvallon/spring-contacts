@@ -34,4 +34,11 @@ public class ContactRepository {
             }
         );
     }
+
+    public void save(Contact contact) {
+        jdbc.update(
+            "INSERT INTO contacts (firstName, lastName, phoneNumber, emailAddress) values (?, ?, ?, ?)",
+            contact.getFirstName(), contact.getLastName(), contact.getPhoneNumber(), contact.getEmailAddress()
+        );
+    }
 }
